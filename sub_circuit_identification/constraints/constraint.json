@@ -1,0 +1,213 @@
+{
+    "critical_nets": [
+        {
+            "net": "net1",
+            "value": "min"
+        },
+        {
+            "net": "net2",
+            "value": "min"
+        },
+        {
+            "net": "vin1",
+            "value": "mid"
+        },
+        {
+            "net": "vin2",
+            "value": "mid"
+        },
+        {
+            "net": "vin3",
+            "value": "mid"
+        },
+        {
+            "net": "vout",
+            "value": "mid"
+        },
+        {
+            "net": "vin1",
+            "value": "GND"
+        },
+        {
+            "net": "vin2",
+            "value": "GND"
+        },
+        {
+            "net": "vin3",
+            "value": "GND"
+        },
+        {
+            "net": "voutnet1",
+            "value": "GND"
+        },
+        {
+            "net": "net2",
+            "value": "GND"
+        }
+    ],
+    "shielded_nets": [],
+    "matching_blocks": [
+        {
+            "block1": "C0",
+            "block2": "C1"
+        },
+        {
+            "block1": "R0",
+            "block2": "R1"
+        },
+        {
+            "block1": "xM0|MN0",
+            "block2": "xM2|MN0"
+        },
+        {
+            "block1": "xM2|MN0",
+            "block2": "xM4|MN0"
+        },
+        {
+            "block1": "xM1|MP0",
+            "block2": "xM3|MP0"
+        },
+        {
+            "block1": "xM3|MP0",
+            "block2": "xM5|MP0"
+        },
+        {
+            "block1": "block1",
+            "block2": "block2"
+        },
+        {
+            "block1": "block3",
+            "block2": "block4"
+        }
+    ],
+    "Symmetrical_nets": [
+        {
+            "net1": "vin1",
+            "net2": "vin1",
+            "pins1": [],
+            "pins2": []
+        },
+        {
+            "net1": "vin2",
+            "net2": "vin2",
+            "pins1": [],
+            "pins2": []
+        },
+        {
+            "net1": "vin3",
+            "net2": "vin3",
+            "pins1": [],
+            "pins2": []
+        },
+        {
+            "net1": "vin1",
+            "net2": "vin2",
+            "pins1": [
+                "C0/MINUS"
+            ],
+            "pins2": [
+                "C0/MINUS"
+            ]
+        },
+        {
+            "net1": "vin2",
+            "net2": "vin3",
+            "pins1": [
+                "C2/MINUS"
+            ],
+            "pins2": [
+                "C2/MINUS"
+            ]
+        },
+        {
+            "net1": "vbp1",
+            "net2": "vbn1",
+            "pins1": [
+                "R1/PLUS"
+            ],
+            "pins2": [
+                "R1/PLUS"
+            ]
+        },
+        {
+            "net1": "vbp2",
+            "net2": "vbn2",
+            "pins1": [
+                "R3/PLUS"
+            ],
+            "pins2": [
+                "R3/PLUS"
+            ]
+        },
+        {
+            "net1": "vbp3",
+            "net2": "vbn3",
+            "pins1": [
+                "R5/PLUS"
+            ],
+            "pins2": [
+                "R5/PLUS"
+            ]
+        },
+        {
+            "net1": "vbp1",
+            "net2": "vbp2",
+            "pins1": [
+                "R1/PLUS"
+            ],
+            "pins2": [
+                "R1/PLUS"
+            ]
+        },
+        {
+            "net1": "vbp2",
+            "net2": "vbp3",
+            "pins1": [
+                "R3/PLUS"
+            ],
+            "pins2": [
+                "R3/PLUS"
+            ]
+        },
+        {
+            "net1": "vbn1",
+            "net2": "vbn2",
+            "pins1": [
+                "R0/PLUS"
+            ],
+            "pins2": [
+                "R0/PLUS"
+            ]
+        },
+        {
+            "net1": "vbn2",
+            "net2": "vbn3",
+            "pins1": [
+                "R2/PLUS"
+            ],
+            "pins2": [
+                "R2/PLUS"
+            ]
+        },
+        {
+            "net1": "net1",
+            "net2": "net2",
+            "pins1": [
+                "pin1"
+            ],
+            "pins2": [
+                "pina"
+            ]
+        },
+        {
+            "net1": "net3",
+            "net2": "net4",
+            "pins1": [
+                "pin1"
+            ],
+            "pins2": [
+                "pina"
+            ]
+        }
+    ]
+}

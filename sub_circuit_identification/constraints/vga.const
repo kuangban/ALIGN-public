@@ -1,0 +1,16 @@
+CritNet(vout1,max)
+CritNet(vout2,max)
+
+ShieldNet(vin1,mid)
+ShieldNet(vin2,mid)
+ShieldNet(vout1)
+ShieldNet(vout2)
+ShieldNet(vin1)
+ShieldNet(vin2)
+
+SymmNet({vout1,R1/MINUS,Cload1/PLUS,xM00|MN0_xM01|MN0/D1,xM10|MN0_xM11|MN0/D1,xM20|MN0_xM21|MN0/D1,xM30|MN0_xM31|MN0/D1},{vout2,R0/MINUS,Cload2/PLUS,xM00|MN0_xM01|MN0/D2,xM10|MN0_xM11|MN0/D2,xM20|MN0_xM21|MN0/D2,xM30|MN0_xM31|MN0/D2})
+SymmNet({vdd!,R1/MINUS,vdd!},{vdd!,R0/MINUS,vdd!})
+
+MatchBlock(R0,R1)
+MatchBlock(CL0,CL1)
+

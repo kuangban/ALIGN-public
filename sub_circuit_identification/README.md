@@ -8,10 +8,16 @@ docker build -t topology .
 ## Run a Python-based test using docker
 
 ```bash
-docker run --mount source=inputVol,target=/INPUT topology bash -c "source /sympy/bin/activate && cd /DEMO && ./runme.sh ota"
+docker run --name topology_container --mount source=inputVol,target=/INPUT topology bash -c "source /sympy/bin/activate && cd /DEMO && ./runme.sh ota && cp -r ./results /INPUT"
+```
+To copy back the resluts locally:
+```bash
+docker cp topology_container:/INPUT/results .
 ```
 
 ## Direct run on terminal
+
+SPICE-file name. It should have a subckt of same name.
 ```bash
 chmod +x runme.sh
 ./runme.sh ota
