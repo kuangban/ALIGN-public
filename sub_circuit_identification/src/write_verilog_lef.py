@@ -138,7 +138,7 @@ def generate_lef(fp, name, size, available_block_lef, unit_size=10):
         elif 'cap' in param.lower():
             size = int(value)
             cap_unit_size = unit_size
-            block_name = name + '_' + str(value) + 'f'
+            block_name = name + '_' + str(size) + 'f'
             unit_block_name = param + '_' + str(cap_unit_size) + 'f'
             if block_name in available_block_lef:
                 return block_name

@@ -1,0 +1,18 @@
+# CritNet indicates the allowed RC constraints for the net.
+# ShieldNet marks the net that required shielding from crosstalk.
+CritNet(net010,max)
+CritNet(vchannel,mid)
+CritNet(vd,mid)
+CritNet(vs,mid)
+
+ShieldNet(net010)
+ShieldNet(vchannel)
+ShieldNet(vd)
+ShieldNet(vs)
+
+SymmNet({vd,xM0|MN0/D,CL1/PLUS,R1/MINUS},{vs,xM0|MN0/S,CL2/PLUS,R0/PLUS})
+SymmNet({vdd!,R1/PLUS, vdd!},{0,R0/MINUS, 0})
+
+MatchBlock(R1,R2)
+MatchBlock(CL1,CL2)
+
